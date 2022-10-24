@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col"></div>
+        <div class="col-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <h4 class="text-dark text-muted">Register</h4>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">First Name</label>
+                            <input type="text" class="form-control" name="firstName"  [(ngModel)]="First_name">
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" name="lastName"  [(ngModel)]="Last_name">
+                          </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <input type="email" class="form-control" name="email" [(ngModel)]="Email">
+                         
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Phone</label>
+                            <input type="number" class="form-control" name="Phone"  [(ngModel)]="Mobile">
+                          </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="password"  [(ngModel)]="Password">
+                        </div>
+
+
+                        <button type="submit" class="btn btn-info"    (click)=" add()"  >Register</button>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="/login" style="text-decoration: none;">Have an account ? <span class="text-danger">Login</span></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
